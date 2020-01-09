@@ -1,0 +1,343 @@
+/* Basic "browser reset". */
+* 	{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+
+
+#grid-container
+				{
+					display: grid;
+					grid-template-columns: 25% 25% 25% 25%;
+					grid-template-rows: auto;
+					grid-template-areas: 
+					"logo navigation navigation phone";
+					background-color: #f9e4b7;
+				}
+
+#logo
+		{
+			grid-column-start: 'logo';
+			background-color: #f9e4b7;
+		}
+
+#logo img
+		{
+  		margin-left: auto;	
+  		margin-right: auto;	
+  		display: block;
+  		height: 120px;    
+   		}
+
+
+#navigation
+			{
+				grid-column-start: 'navigation';
+				grid-column-end: span 2;
+				margin-top: 70px;
+			}
+
+#navigation > ul 
+				{
+				list-style: none;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				background-color: #B81516;
+				height: 50px;
+				width:100%;
+				position: bottom;
+
+				}
+
+#navigation a
+				{
+				color: #f9e4b7;
+				font-size: 18px;
+				font-style: bold;
+				width:200px;
+				text-decoration: none;
+
+				}
+
+#navigation li
+				{
+				border-right: 1px solid #f9e4b7;
+				width: 33.333%;
+				text-align: center;
+				padding: 15px;
+				}
+
+#navigation li:hover 
+					{
+  					background-color: #111;
+					}
+
+#navigation li:last-child
+						{
+  						border-right: none;
+						}
+
+#phone
+		{
+			grid-column: 'phone';
+			background-color: #f9e4b7;
+		}
+
+#phone a
+		{
+		color: #B81516;
+		font-style: bold;
+		font-size: 24px;
+		text-decoration: none;
+		}
+
+#phone img
+			{
+				width: 50px;
+				height: 50px;
+				margin-top: 58px;
+				margin-left: 35px;
+			}
+
+.mainbanner
+			{
+				position: relative;
+			}
+.mainbanner img
+				{
+				width: 100%;
+				height: 600px;
+				display: block;
+				}
+
+.cta
+	{
+		font-size: 30px;
+		background-color: #B81516;
+		text-align: center;
+		font-style: bold;
+		color: #f9e4b7;
+		text-decoration: none;
+		padding: 15px;
+		position: absolute;
+		top:70%;
+		left:65%;
+
+	}				
+.offer
+		{
+		display: flex;  
+		flex-direction: row;
+		flex-wrap: wrap;
+		font-size: 24px;
+		text-align: center;
+		font-style: bold;
+
+		}
+
+#offer1, #offer2, #offer3, #offer4
+		{
+			width:25%;
+			border: 2px solid #B81516;
+			background-color: #f9e4b7;
+			padding:10px;
+
+		}
+
+#offer1 img, #offer2 img, #offer3 img, #offer4 img
+												{
+												width: 100%;
+												height: 400px;
+												}
+
+#offer1 a, #offer2 a, #offer3 a, #offer4 a
+										{
+										text-decoration: none;
+										color: #B81516;
+										}
+
+.viewdeals
+			{
+			font-size: 24px;
+			text-align: center;
+			font-style: bold;
+			background-color: #B81516;
+			padding: 15px;
+			}
+
+.viewdeals a
+			{
+			color: #f9e4b7;
+			text-decoration: none;
+			}
+
+.restaurant
+			{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+
+.image1, .image2, .image3
+						{
+						width:33.333%;
+						height:500px;
+						border: 2px solid #B81516;
+						}
+
+.image1 img, .image2 img, .image3 iframe
+										{
+										width:100%;
+										height: 500px;
+										}
+/* Footer */
+
+.footer1
+		{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height:50px;
+		width: 100%;
+		}
+
+.copyright
+			{
+			width:40%;
+        	padding-top: 20px;
+			color: #f9e4b7;
+			background-color: #B81516;
+			padding-left: 130px;
+			}		
+.social
+		{
+			width: 60%;
+			color: #f9e4b7;
+			background-color: #B81516;
+			padding-left: 450px;
+		}			
+.social img
+		{
+			height: 30px;
+			width: 30px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+
+/* Menu */
+.menu
+	{
+		background-color: #f9e4b7;
+		font-size: 30px;
+		padding: 30px;
+		color: #B81516;
+		text-align: center;
+		border: 1px;
+		text-decoration: none;
+
+	}
+
+.starters, .pizza, .deserts, .beverages
+									{
+									display: flex;
+									flex-direction: row;
+									flex-wrap: wrap;
+									}
+
+.starters img, .pizza img, .deserts img, .beverages img
+														{
+														height:500px;
+														width: 50%;
+														}
+
+.starters div, .pizza div, .deserts div, .beverages div
+														{
+														width: 50%;
+														background-color: #f9e4b7;
+														font-size: 20px;
+														color: #B81516;
+														}
+
+.starters h2, .pizza h2, .deserts h2, .beverages h2
+													{
+													text-align: center;
+													padding: 10px;
+													text-decoration: none;
+													}
+
+.starters span, .pizza span, .deserts span, .beverages span
+															{
+															margin-left: 300px;
+															font-size: 20px;
+															}
+
+
+.starters h4, .pizza h4, .deserts h4, .beverages h4
+													{
+													padding-top: 20px;
+													margin-left: 150px;
+													}	
+.starters p, .pizza p, .deserts p, .beverages p
+												{
+												margin-left: 150px;
+												font-size: 16px;
+												}
+
+.contact
+		{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			color: #B81516;
+			text-align: center;
+			padding: 60px;
+		}
+
+.contact div
+		{
+			width: 50%;
+			background-color: #f9e4b7;
+			font-size: 20px;
+			color: #B81516;
+			text-align: center;
+			text-decoration: none;
+		}
+
+.contact h2
+			{
+			padding-top: 100px;
+			}
+
+.contact a
+			{
+				text-decoration: none;
+				color: #B81516;
+			}
+.map
+	{
+		width: 50%;
+	}
+
+.about
+		{
+		color: #B81516;
+		font-size: 18
+
+		}
+	
+.body1
+	{
+		min-height:100vh;
+		padding-bottom: 50px;
+		position: relative;
+		background-color: #f9e4b7;
+	}
+
+.footer1
+		{
+			position:absolute;
+			bottom:0;
+		}
