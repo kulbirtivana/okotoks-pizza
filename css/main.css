@@ -81,15 +81,24 @@
 
 #phone
 		{
-			grid-column: 'phone';
+			grid-column-start: 'phone';
 			background-color: #f9e4b7;
-		}
 
+		}
+#phone
+		{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-left: auto;
+		margin-right: auto;
+		}
 #phone a
 		{
 		color: #B81516;
 		font-style: bold;
 		font-size: 24px;
+		text-align: center;
 		text-decoration: none;
 		}
 
@@ -97,8 +106,9 @@
 			{
 				width: 50px;
 				height: 50px;
-				margin-top: 58px;
-				margin-left: 35px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
 			}
 
 .mainbanner
@@ -115,7 +125,7 @@
 .cta
 	{
 		font-size: 30px;
-		background-color: #B81516;
+		background-color: #730d0e;
 		text-align: center;
 		font-style: bold;
 		color: #f9e4b7;
@@ -140,7 +150,7 @@
 #offer1, #offer2, #offer3, #offer4
 		{
 			width:25%;
-			border: 2px solid #B81516;
+			border: 1px solid #B81516;
 			background-color: #f9e4b7;
 			padding:10px;
 
@@ -321,13 +331,8 @@
 		width: 50%;
 	}
 
-.about
-		{
-		color: #B81516;
-		font-size: 18
+/*For footer in the bottom*/
 
-		}
-	
 .body1
 	{
 		min-height:100vh;
@@ -341,3 +346,113 @@
 			position:absolute;
 			bottom:0;
 		}
+
+/*About Page*/
+
+.topbanner img
+			{
+			width:100%;
+			height:200px;
+			}
+
+.about
+		{
+		color: #B81516;
+		background-color:#f9e4b7;
+		font-size: 18;
+		}
+.about h1
+		{
+		font-size: 24px;
+		text-align: center;
+		padding: 30px;
+		}
+.about p
+		{
+			padding: 10px;
+			margin-right: 70px;
+			margin-left: 70px;
+			text-align: left;
+			font-size: 18px;
+		}
+
+/*Media Query*/
+@media screen and (max-width: 550px)
+									{				
+									#navigation
+												{
+												display: none;
+												}
+
+									#phone img, #phone a
+														{
+														margin-left: 50px;
+														font-size: 16px;
+														}		
+									#logo img
+										{
+											width: 100px;
+										}					
+
+									#grid-container
+													{
+													display: grid;
+													grid-template-columns: 33.333% 33.333% 33.333%;
+													grid-template-rows: auto;
+													grid-template-areas: 
+													"logo phone phone";
+													background-color: #f9e4b7;
+													}
+
+									#logo
+										{
+										grid-column-start: 'logo';
+										background-color: #f9e4b7;
+										}
+
+									#logo img
+											{
+  											margin-left: auto;	
+  											margin-right: auto;	
+  											display: block;
+  											height: 120px;    
+   											}
+
+#phone
+		{
+			grid-column-start: 'phone';
+			background-color: #f9e4b7;
+			grid-column-end: span 2;
+
+		}
+#phone
+		{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-left: auto;
+		margin-right: auto;
+		}
+#phone a
+		{
+		color: #f9e4b7;
+		font-style: bold;
+		font-size: 18px;
+		text-align: center;
+		text-decoration: none;
+		background-color: #B81516
+		}
+
+#phone img
+			{
+				width: 50px;
+				height: 50px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+			}
+
+
+
+
+
